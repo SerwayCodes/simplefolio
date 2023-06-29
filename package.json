@@ -5,12 +5,8 @@
   "description": "Synet simplefolio",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "prebuild-dev": "shx rm -rf dist/*",
-    "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
-    "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build ./src/index.html --public-url ./",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -30,7 +26,7 @@
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
-    "shx": "^0.3.4",
     "vanilla-tilt": "^1.8.0"
+    
   }
 }
